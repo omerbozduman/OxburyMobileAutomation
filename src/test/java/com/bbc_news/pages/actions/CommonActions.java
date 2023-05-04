@@ -12,6 +12,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
@@ -71,8 +72,8 @@ public class CommonActions {
 
     public void scroll(String direction){
         Dimension size = driver.manage().window().getSize();
-        int startX = size.getWidth()/2;
-        int endX = size.getWidth()/2;
+        int startX = (int) (size.getWidth()/0.80);
+        int endX = (int) (size.getWidth()/0.10);
         int startY = size.getHeight()/2;
         int endY = (int) (size.getHeight()*0.25);
 
@@ -81,7 +82,7 @@ public class CommonActions {
                 swipe(startX, endY , endX, startY , Duration.ofMillis(500));
                 break;
             case "down" :
-                swipe(startX, startY , endX, endY , Duration.ofMillis(500));
+                swipe(startX, startY , endX, startY , Duration.ofMillis(500));
                 break;
             case "left" :
                 swipe(startY, startX , endY, endX , Duration.ofMillis(500));
@@ -93,13 +94,19 @@ public class CommonActions {
     }
 
     public void swipe(int startX , int startY, int endX, int endY , Duration duration){
-        PointerInput input = new PointerInput(PointerInput.Kind.TOUCH , "first-finger");
-        Sequence swipe = new Sequence(input , 0)
-                .addAction(input.createPointerMove(Duration.ZERO ,PointerInput.Origin.viewport(),startX , startY))
-                .addAction(input.createPointerDown(PointerInput.MouseButton.LEFT.asArg()))
-                .addAction(input.createPointerMove(duration ,PointerInput.Origin.viewport(),endX , endY))
-                .addAction(input.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
-        driver.perform(Collections.singletonList(swipe));
+        PointerInput input = new PointerInput(PointerInput.Kind.TOUCH , "finger");
+        Sequence swipe = new Sequence(input , 1);
+                swipe.addAction(input.createPointerMove(Duration.ZERO ,PointerInput.Origin.viewport(),startX , startY));
+                swipe.addAction(input.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+                swipe.addAction(input.createPointerMove(duration ,PointerInput.Origin.viewport(),endX , endY));
+                swipe.addAction(input.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+        driver.perform(Arrays.asList(swipe));
+
+    }
+
+    public WebElement  scrollLeft(String text){
+        return driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector().scrollable(true).instance(0))" +
+                ".setAsHorizontalList().scrollIntoView(new UiSelector().text(\""+text+"\"))"));
 
     }
 

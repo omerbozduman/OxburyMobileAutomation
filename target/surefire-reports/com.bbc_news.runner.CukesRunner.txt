@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.bbc_news.runner.CukesRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 674.33 s - in com.bbc_news.runner.CukesRunner
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 241.528 s - in com.bbc_news.runner.CukesRunner

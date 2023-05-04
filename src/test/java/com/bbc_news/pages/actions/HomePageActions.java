@@ -30,11 +30,6 @@ public class HomePageActions extends CommonActions {
     }
 
     public List<String> getTopicsAfterSearch(){
-        List<String> listOfText = getListOfText(homePageIdentifiers.searchResultTopics);
-        for (String text:listOfText) {
-            scrollDownToElementByAndroidUIAutomator(text);
-
-        }
         return getListOfText(homePageIdentifiers.searchResultTopics);
     }
 
