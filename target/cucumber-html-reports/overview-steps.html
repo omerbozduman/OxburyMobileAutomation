@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>Cucumber HTML Reports</td>
+        <td>1</td>
+      <td>04 May 2023, 21:23</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.HomePageStepDefs.allTopicsOnTheNavigationBarShouldContain(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="1173126000">1.173</td>
+              <td class="duration" data-value="1173126000">1.173</td>
+              <td class="duration" data-value="1173126000">1.173</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.HomePageStepDefs.following_tab_titles_are_displayed_on_the_home_page(java.util.List&lt;java.lang.String&gt;)</td>
+              <td>1</td>
+              <td class="duration" data-value="11800593000">11.800</td>
+              <td class="duration" data-value="11800593000">11.800</td>
+              <td class="duration" data-value="11800593000">11.800</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.HomePageStepDefs.iClickTheSearchButton()</td>
+              <td>3</td>
+              <td class="duration" data-value="1394596666">1.394</td>
+              <td class="duration" data-value="1394596666">1.817</td>
+              <td class="duration" data-value="4183790000">4.183</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.HomePageStepDefs.iNavigateToHomePage()</td>
+              <td>1</td>
+              <td class="duration" data-value="451894000">0.451</td>
+              <td class="duration" data-value="451894000">0.451</td>
+              <td class="duration" data-value="451894000">0.451</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.HomePageStepDefs.iSearchFor(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1781390500">1.781</td>
+              <td class="duration" data-value="1781390500">1.855</td>
+              <td class="duration" data-value="3562781000">3.562</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.HomePageStepDefs.iSelectFromMoreTopics(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="487304000">0.487</td>
+              <td class="duration" data-value="487304000">0.487</td>
+              <td class="duration" data-value="487304000">0.487</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.HomePageStepDefs.iShouldBeSeeAllRelatedTopicsOnTheNavigationBar()</td>
+              <td>1</td>
+              <td class="duration" data-value="6205049000">6.205</td>
+              <td class="duration" data-value="6205049000">6.205</td>
+              <td class="duration" data-value="6205049000">6.205</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.HomePageStepDefs.isDisplayedOnThePage(java.lang.String,java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="7725559500">7.725</td>
+              <td class="duration" data-value="7725559500">9.597</td>
+              <td class="duration" data-value="15451119000">15.451</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.HomePageStepDefs.isDisplayedOnTheSearchPage(java.lang.String)</td>
+              <td>3</td>
+              <td class="duration" data-value="7211986333">7.211</td>
+              <td class="duration" data-value="7211986333">10.084</td>
+              <td class="duration" data-value="21635959000">21.635</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.Hooks.setUp()</td>
+              <td>5</td>
+              <td class="duration" data-value="86127499800">1:26.127</td>
+              <td class="duration" data-value="86127499800">1:48.736</td>
+              <td class="duration" data-value="430637499000">7:10.637</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>5</td>
+              <td class="duration" data-value="2108074000">2.108</td>
+              <td class="duration" data-value="2108074000">3.039</td>
+              <td class="duration" data-value="10540370000">10.540</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.LoginPageStepDefs.iClickTheSignInButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="232382000">0.232</td>
+              <td class="duration" data-value="232382000">0.232</td>
+              <td class="duration" data-value="232382000">0.232</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.LoginPageStepDefs.iContinueToSignInMyAccount()</td>
+              <td>1</td>
+              <td class="duration" data-value="27841666000">27.841</td>
+              <td class="duration" data-value="27841666000">27.841</td>
+              <td class="duration" data-value="27841666000">27.841</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.LoginPageStepDefs.iHaveLaunchedTheBBCNewsApp()</td>
+              <td>1</td>
+              <td class="duration" data-value="367000">0.000</td>
+              <td class="duration" data-value="367000">0.000</td>
+              <td class="duration" data-value="367000">0.000</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.LoginPageStepDefs.i_have_logged_into_my_bbc_news_account()</td>
+              <td>4</td>
+              <td class="duration" data-value="29389893500">29.389</td>
+              <td class="duration" data-value="29389893500">37.346</td>
+              <td class="duration" data-value="117559574000">1:57.559</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.LoginPageStepDefs.title_is_displayed(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2425250000">2.425</td>
+              <td class="duration" data-value="2425250000">2.425</td>
+              <td class="duration" data-value="2425250000">2.425</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.VideoTabStepDefs.iNavigateToTab(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="2698301000">2.698</td>
+              <td class="duration" data-value="2698301000">2.698</td>
+              <td class="duration" data-value="2698301000">2.698</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.VideoTabStepDefs.isDisplayedBottomOfTheScreen(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="12890446000">12.890</td>
+              <td class="duration" data-value="12890446000">12.890</td>
+              <td class="duration" data-value="12890446000">12.890</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">com.bbc_news.step_definitions.VideoTabStepDefs.isDisplayedOnTheVideoTab(java.lang.String)</td>
+              <td>1</td>
+              <td class="duration" data-value="3857446000">3.857</td>
+              <td class="duration" data-value="3857446000">3.857</td>
+              <td class="duration" data-value="3857446000">3.857</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>19</td>
+            <td>36</td>
+            <td class="duration">18.712</td>
+            <td class="duration">7:10.637</td>
+            <td class="duration">11:13.634</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

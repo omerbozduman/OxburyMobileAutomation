@@ -1,0 +1,15 @@
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/pages/identifiers/VideoTabIdentifiers.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/step_definitions/VideoTabStepDefs.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/runner/CukesRunner.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/pages/actions/HomePageActions.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/utilities/ConfigurationReader.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/step_definitions/Hooks.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/pages/identifiers/HomePageIdentifiers.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/driver/MobileDriver.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/pages/actions/CommonActions.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/pages/actions/LoginPageActions.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/pages/identifiers/LoginPageIdentifiers.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/step_definitions/HomePageStepDefs.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/step_definitions/LoginPageStepDefs.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/utilities/MobileUtils.java
+/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/pages/actions/VideoTabActions.java
