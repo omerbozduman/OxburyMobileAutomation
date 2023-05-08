@@ -81,4 +81,17 @@ public class HomePageActions extends CommonActions {
         }
         return listOfAllResult;
     }
+
+    public Set<String> getAllContentsAfetrSearchWithAnyTopic(int numberOfContent){
+        Set<String> listOfAllResult = new LinkedHashSet<>();
+        for(int i =0 ; i<10; i++){
+            List<String> listOfText = getListOfText(homePageIdentifiers.contentTitleAfterSearch);
+            scroll("down");
+            listOfAllResult.addAll(listOfText);
+            if(listOfAllResult.size()==numberOfContent){
+                break;
+            }
+        }
+        return listOfAllResult;
+    }
 }

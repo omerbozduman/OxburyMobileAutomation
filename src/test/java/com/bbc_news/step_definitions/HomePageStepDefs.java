@@ -46,7 +46,7 @@ public class HomePageStepDefs {
         Set<String> listOfText = homePageActions.getTopicsAfterSearch();
         boolean flag = true;
         for (String text:listOfText) {
-            System.out.println("text = " + text);
+            System.out.println("topic = " + text);
             if(!text.contains(expectedTopic)){
                 flag = false;
                 break;
@@ -74,9 +74,24 @@ public class HomePageStepDefs {
     public void iShouldSeeAllRelatedTopicsOnTheNavigationBar() {
         Set<String> listOfText = homePageActions.getAllContentsOfSearchFromMoreTopics();
         for (String text:listOfText) {
-            System.out.println("text = " + text);
+            System.out.println("topic = " + text);
         }
-        System.out.println("text = " + listOfText.size());
+        System.out.println("number of topic = " + listOfText.size());
         Assert.assertTrue(listOfText.size()>0);
+    }
+
+    @And("I check last {int} content, all should contain {string}")
+    public void iCheckLastContentAllShouldContain(int numberOfContent, String contentText) {
+        Set<String> listOfText = homePageActions.getAllContentsAfetrSearchWithAnyTopic(numberOfContent);
+        boolean flag = true;
+        for (String text:listOfText) {
+            System.out.println("content = " + text);
+            if(!text.contains(contentText)){
+                flag = false;
+                break;
+            }
+        }
+        Assert.assertEquals(numberOfContent ,listOfText.size());
+        Assert.assertTrue(flag);
     }
 }

@@ -9,3 +9,4 @@ Feature: Search By Enter Any Topic
     Then I search for "England"
     And "Articles related to" "England" is displayed on the page
     Then all topics on the navigation bar should contain "England"
+    And I check last 50 content, all should contain "England"
