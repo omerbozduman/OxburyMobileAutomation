@@ -7,4 +7,4 @@ Feature: Search From More Topics
     Then I click the search button
     When "More Topics" is displayed on the search page
     Then I select "England" from more topics
-    And I should be see all related topics on the navigation bar
+    And I should see all related topics on the navigation bar

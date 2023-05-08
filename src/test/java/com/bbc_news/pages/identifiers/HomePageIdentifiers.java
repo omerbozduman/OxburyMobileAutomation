@@ -15,7 +15,11 @@ public class HomePageIdentifiers {
 
     public By searchResultTopics = By.xpath("//*[@resource-id='bbc.mobile.news.uk:id/chip_item']");
 
+    public By navigationBarForSearchResult = By.xpath("//*[@resource-id='bbc.mobile.news.uk:id/chip_set']");
+
     public By backButtonOnTheSearchPage = AppiumBy.accessibilityId("Back");
 
     public By contentTitleAfterSearch = By.xpath("//*[@resource-id='bbc.mobile.news.uk:id/content_card_title']");
+
+    public By carouselItemHolder = By.xpath("//*[@resource-id='bbc.mobile.news.uk:id/rubikCarouselItemHolder']");
 }

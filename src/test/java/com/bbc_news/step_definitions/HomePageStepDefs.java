@@ -7,6 +7,7 @@ import io.cucumber.java.en.When;
 import org.junit.Assert;
 
 import java.util.List;
+import java.util.Set;
 
 public class HomePageStepDefs {
 
@@ -42,9 +43,10 @@ public class HomePageStepDefs {
 
     @Then("all topics on the navigation bar should contain {string}")
     public void allTopicsOnTheNavigationBarShouldContain(String expectedTopic) {
-        List<String> listOfText = homePageActions.getTopicsAfterSearch();
+        Set<String> listOfText = homePageActions.getTopicsAfterSearch();
         boolean flag = true;
         for (String text:listOfText) {
+            System.out.println("text = " + text);
             if(!text.contains(expectedTopic)){
                 flag = false;
                 break;
@@ -68,8 +70,13 @@ public class HomePageStepDefs {
         homePageActions.searchFromMoreTopic(topic);
     }
 
-    @And("I should be see all related topics on the navigation bar")
-    public void iShouldBeSeeAllRelatedTopicsOnTheNavigationBar() {
-        Assert.assertTrue(homePageActions.getNumberOfNewsAfterSearch());
+    @And("I should see all related topics on the navigation bar")
+    public void iShouldSeeAllRelatedTopicsOnTheNavigationBar() {
+        Set<String> listOfText = homePageActions.getAllContentsOfSearchFromMoreTopics();
+        for (String text:listOfText) {
+            System.out.println("text = " + text);
+        }
+        System.out.println("text = " + listOfText.size());
+        Assert.assertTrue(listOfText.size()>0);
     }
 }

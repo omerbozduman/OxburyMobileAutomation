@@ -1,9 +1,12 @@
 package com.bbc_news.pages.actions;
 
 import com.bbc_news.pages.identifiers.HomePageIdentifiers;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.WebElement;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 public class HomePageActions extends CommonActions {
 
@@ -29,8 +32,17 @@ public class HomePageActions extends CommonActions {
         return getTextOfElement(homePageIdentifiers.searchResultArticlesRelatedHeading);
     }
 
-    public List<String> getTopicsAfterSearch(){
-        return getListOfText(homePageIdentifiers.searchResultTopics);
+    public Set<String> getTopicsAfterSearch(){
+        Set<String> listOfAllResult = new LinkedHashSet<>();
+        WebElement element = getElement(homePageIdentifiers.navigationBarForSearchResult);
+        int elementHeight =  element.getLocation().getY() + element.getSize().getHeight()/2;
+        ((AndroidDriver) driver).hideKeyboard();
+       for(int i =0 ; i<10; i++){
+           List<String> listOfText = getListOfText(homePageIdentifiers.searchResultTopics);
+           scrollWithElementHeight("left" , elementHeight);
+           listOfAllResult.addAll(listOfText);
+       }
+        return listOfAllResult;
     }
 
     public void navigateToHomePageAfterSearch(){
@@ -53,8 +65,20 @@ public class HomePageActions extends CommonActions {
         clickButton(locator);
     }
 
-    public boolean getNumberOfNewsAfterSearch(){
-        int numberOfNews = getListOfElement(homePageIdentifiers.contentTitleAfterSearch).size();
-        return numberOfNews>0;
+    public Set<String> getAllContentsOfSearchFromMoreTopics(){
+        Set<String> listOfAllResult = new LinkedHashSet<>();
+        WebElement element = getElement(homePageIdentifiers.carouselItemHolder);
+        int elementHeight =  element.getLocation().getY() + element.getSize().getHeight()/2;
+        for(int i =0 ; i<5; i++){
+            List<String> listOfText = getListOfText(homePageIdentifiers.contentTitleAfterSearch);
+            scrollWithElementHeight("left" , elementHeight);
+            listOfAllResult.addAll(listOfText);
+        }
+        for(int i =0 ; i<8; i++){
+            List<String> listOfText = getListOfText(homePageIdentifiers.contentTitleAfterSearch);
+            scroll("down");
+            listOfAllResult.addAll(listOfText);
+        }
+        return listOfAllResult;
     }
 }

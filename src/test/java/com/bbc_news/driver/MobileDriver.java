@@ -3,6 +3,7 @@ package com.bbc_news.driver;
 import com.bbc_news.utilities.ConfigurationReader;
 import com.bbc_news.utilities.MobileUtils;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.URL;
@@ -37,12 +38,12 @@ public class MobileDriver {
                 desiredCapabilities.setCapability(DEVICE_NAME, ConfigurationReader.get("deviceName"));
                 desiredCapabilities.setCapability(AUTOMATION_NAME, ConfigurationReader.get("automationName"));
                 desiredCapabilities.setCapability("adbExecTimeout", "20000");
-                desiredCapabilities.setCapability("fullReset", true);
+                //desiredCapabilities.setCapability("fullReset", true);
                 //desiredCapabilities.setCapability("appPackage", ConfigurationReader.get("appPackage"));
                 //desiredCapabilities.setCapability("appActivity", ConfigurationReader.get("appActivity"));
                 desiredCapabilities.setCapability(APP, appPath);
                 try {
-                    driver = new AppiumDriver(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
+                    driver = new AndroidDriver(new URL("http://localhost:4723/wd/hub"), desiredCapabilities);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
