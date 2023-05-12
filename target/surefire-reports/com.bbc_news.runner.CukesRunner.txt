@@ -1,4 +1,22 @@
 -------------------------------------------------------------------------------
 Test set: com.bbc_news.runner.CukesRunner
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 241.528 s - in com.bbc_news.runner.CukesRunner
+Tests run: 5, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 175.836 s <<< FAILURE! - in com.bbc_news.runner.CukesRunner
+As a user I should be able search topics from search button and see them after search(Search By Enter Any Topic)  Time elapsed: 62.691 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='bbc.mobile.news.uk:id/content_card_title'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_302'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:adbExecTimeout: 20000, appium:app: /Users/omerbozduman/IdeaPro..., appium:appPackage: bbc.mobile.news.uk, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: UiAutomator2, deviceName: Pixel_6_Pro_API_26, platformName: ANDROID, platformVersion: 8.0}, appium:deviceApiLevel: 26, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 8.0.0, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2868, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9c3208ec-4397-4d9a-a00b-1763093324c0
+
+As a user I should be able search topics from search button and see them after search(Search From More Topics)  Time elapsed: 48.895 s  <<< ERROR!
+org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='bbc.mobile.news.uk:id/content_card_title'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_302'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:adbExecTimeout: 20000, appium:app: /Users/omerbozduman/IdeaPro..., appium:appPackage: bbc.mobile.news.uk, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: UiAutomator2, deviceName: Pixel_6_Pro_API_26, platformName: ANDROID, platformVersion: 8.0}, appium:deviceApiLevel: 26, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 8.0.0, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2868, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 21b6cfc5-da79-410f-bb6d-b11d8c54bf80
+

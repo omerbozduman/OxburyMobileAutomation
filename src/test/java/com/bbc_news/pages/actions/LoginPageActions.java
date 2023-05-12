@@ -55,4 +55,14 @@ public class LoginPageActions extends CommonActions {
     public void signInAfterEnterCredentials(){
         clickButton(loginPageIdentifiers.signInButtonOnTheSignInPage);
     }
+
+    public void signInToBbcAccountWithYourCredentials(){
+        clickButton(loginPageIdentifiers.signInButton);
+        String userName = ConfigurationReader.get("userName");
+        enterTextToField(loginPageIdentifiers.userNameField , userName);
+        String password = ConfigurationReader.get("password");
+        enterTextToField(loginPageIdentifiers.passwordField , password);
+        clickButton(loginPageIdentifiers.signInButtonOnTheSignInPage);
+
+    }
 }

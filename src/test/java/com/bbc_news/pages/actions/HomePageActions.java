@@ -88,7 +88,7 @@ public class HomePageActions extends CommonActions {
             List<String> listOfText = getListOfText(homePageIdentifiers.contentTitleAfterSearch);
             scroll("down");
             listOfAllResult.addAll(listOfText);
-            if(listOfAllResult.size()==numberOfContent){
+            if(listOfAllResult.size()>=numberOfContent){
                 break;
             }
         }

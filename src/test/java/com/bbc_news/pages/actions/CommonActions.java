@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class CommonActions {
+public abstract class CommonActions {
 
     protected AppiumDriver driver;
     public CommonActions(){

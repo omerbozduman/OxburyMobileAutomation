@@ -1,66 +1,565 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.bbc_news.runner.CukesRunner" time="241.528" tests="5" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.bbc_news.runner.CukesRunner" time="175.836" tests="5" errors="2" skipped="0" failures="0">
   <properties>
-    <property name="java.specification.version" value="19"/>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="sun.cpu.isalist" value=""/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/omerbozduman/IdeaProjects/OxburyTask/target/test-classes:/Users/omerbozduman/IdeaProjects/OxburyTask/target/classes:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-java/7.12.0/cucumber-java-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-core/7.12.0/cucumber-core-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin/7.12.0/cucumber-gherkin-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.12.0/cucumber-gherkin-messages-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/omerbozduman/.m2/repository/io/cucumber/datatable/7.12.0/datatable-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-plugin/7.12.0/cucumber-plugin-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/docstring/7.12.0/docstring-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/html-formatter/20.3.0/html-formatter-20.3.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/Users/omerbozduman/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-junit/7.12.0/cucumber-junit-7.12.0.jar:/Users/omerbozduman/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/omerbozduman/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/omerbozduman/.m2/repository/io/appium/java-client/8.3.0/java-client-8.3.0.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-api/4.9.0/selenium-api-4.9.0.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.9.0/selenium-remote-driver-4.9.0.jar:/Users/omerbozduman/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/omerbozduman/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/omerbozduman/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/omerbozduman/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/omerbozduman/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/omerbozduman/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/omerbozduman/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/omerbozduman/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-buffer/4.1.91.Final/netty-buffer-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec-http/4.1.91.Final/netty-codec-http-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec/4.1.91.Final/netty-codec-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-handler/4.1.91.Final/netty-handler-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-common/4.1.91.Final/netty-common-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.91.Final/netty-transport-classes-epoll-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.91.Final/netty-transport-classes-kqueue-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-epoll/4.1.91.Final/netty-transport-native-epoll-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.91.Final/netty-transport-native-kqueue-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.91.Final/netty-transport-native-unix-common-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport/4.1.91.Final/netty-transport-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-resolver/4.1.91.Final/netty-resolver-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api/1.25.0/opentelemetry-api-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-context/1.25.0/opentelemetry-context-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.25.0/opentelemetry-exporter-logging-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.25.0/opentelemetry-sdk-metrics-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.25.0-alpha/opentelemetry-sdk-logs-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.25.0-alpha/opentelemetry-api-logs-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.25.0-alpha/opentelemetry-api-events-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.25.0/opentelemetry-sdk-common-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.25.0/opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.25.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.25.0/opentelemetry-sdk-trace-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.25.0/opentelemetry-sdk-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/omerbozduman/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/omerbozduman/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/omerbozduman/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/omerbozduman/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/omerbozduman/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/omerbozduman/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-http/4.9.0/selenium-http-4.9.0.jar:/Users/omerbozduman/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-json/4.9.0/selenium-json-4.9.0.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.9.0/selenium-manager-4.9.0.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-support/4.9.0/selenium-support-4.9.0.jar:/Users/omerbozduman/.m2/repository/com/google/code/gson/gson/2.10/gson-2.10.jar:/Users/omerbozduman/.m2/repository/cglib/cglib/3.3.0/cglib-3.3.0.jar:/Users/omerbozduman/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/Users/omerbozduman/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/omerbozduman/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/omerbozduman/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/omerbozduman/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/omerbozduman/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/omerbozduman/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/omerbozduman/.m2/repository/org/slf4j/slf4j-api/2.0.5/slf4j-api-2.0.5.jar:"/>
-    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.class.path" value="/Users/omerbozduman/IdeaProjects/OxburyTask/target/test-classes:/Users/omerbozduman/IdeaProjects/OxburyTask/target/classes:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-java/7.12.0/cucumber-java-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-core/7.12.0/cucumber-core-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin/7.12.0/cucumber-gherkin-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.12.0/cucumber-gherkin-messages-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/omerbozduman/.m2/repository/io/cucumber/datatable/7.12.0/datatable-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-plugin/7.12.0/cucumber-plugin-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/docstring/7.12.0/docstring-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/html-formatter/20.3.0/html-formatter-20.3.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/Users/omerbozduman/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-junit/7.12.0/cucumber-junit-7.12.0.jar:/Users/omerbozduman/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/omerbozduman/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/omerbozduman/.m2/repository/io/appium/java-client/8.3.0/java-client-8.3.0.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-api/4.9.1/selenium-api-4.9.1.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.9.1/selenium-remote-driver-4.9.1.jar:/Users/omerbozduman/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/omerbozduman/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/omerbozduman/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/omerbozduman/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/omerbozduman/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/omerbozduman/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/omerbozduman/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/omerbozduman/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-buffer/4.1.91.Final/netty-buffer-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec-http/4.1.91.Final/netty-codec-http-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec/4.1.91.Final/netty-codec-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-handler/4.1.91.Final/netty-handler-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-common/4.1.91.Final/netty-common-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.91.Final/netty-transport-classes-epoll-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.91.Final/netty-transport-classes-kqueue-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-epoll/4.1.91.Final/netty-transport-native-epoll-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.91.Final/netty-transport-native-kqueue-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.91.Final/netty-transport-native-unix-common-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport/4.1.91.Final/netty-transport-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-resolver/4.1.91.Final/netty-resolver-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api/1.25.0/opentelemetry-api-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-context/1.25.0/opentelemetry-context-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.25.0/opentelemetry-exporter-logging-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.25.0/opentelemetry-sdk-metrics-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.25.0-alpha/opentelemetry-sdk-logs-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.25.0-alpha/opentelemetry-api-logs-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.25.0-alpha/opentelemetry-api-events-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.25.0/opentelemetry-sdk-common-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.25.0/opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.25.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.25.0/opentelemetry-sdk-trace-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.25.0/opentelemetry-sdk-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/omerbozduman/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/omerbozduman/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/omerbozduman/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/omerbozduman/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/omerbozduman/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/omerbozduman/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-http/4.9.1/selenium-http-4.9.1.jar:/Users/omerbozduman/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-json/4.9.1/selenium-json-4.9.1.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.9.1/selenium-manager-4.9.1.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-support/4.9.1/selenium-support-4.9.1.jar:/Users/omerbozduman/.m2/repository/com/google/code/gson/gson/2.10/gson-2.10.jar:/Users/omerbozduman/.m2/repository/cglib/cglib/3.3.0/cglib-3.3.0.jar:/Users/omerbozduman/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/Users/omerbozduman/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/omerbozduman/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/omerbozduman/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/omerbozduman/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/omerbozduman/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/omerbozduman/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/omerbozduman/.m2/repository/org/slf4j/slf4j-api/2.0.5/slf4j-api-2.0.5.jar:"/>
+    <property name="java.vm.vendor" value="Temurin"/>
     <property name="sun.arch.data.model" value="64"/>
-    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="1.8"/>
     <property name="os.name" value="Mac OS X"/>
-    <property name="java.vm.specification.version" value="19"/>
-    <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="GB"/>
-    <property name="sun.boot.library.path" value="/Users/omerbozduman/Library/Java/JavaVirtualMachines/openjdk-19.0.1/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/omerbozduman/IdeaProjects/OxburyTask/target/surefire/surefirebooter16250504556131234570.jar /Users/omerbozduman/IdeaProjects/OxburyTask/target/surefire 2023-05-04T23-20-27_115-jvmRun1 surefire16037348119765887441tmp surefire_017165258464045770772tmp"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib"/>
+    <property name="sun.java.command" value="/Users/omerbozduman/IdeaProjects/OxburyTask/target/surefire/surefirebooter3777965777937589851.jar /Users/omerbozduman/IdeaProjects/OxburyTask/target/surefire 2023-05-10T13-10-23_529-jvmRun1 surefire2511902328007730086tmp surefire_02317684882666033522tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/omerbozduman/IdeaProjects/OxburyTask/target/test-classes:/Users/omerbozduman/IdeaProjects/OxburyTask/target/classes:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-java/7.12.0/cucumber-java-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-core/7.12.0/cucumber-core-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin/7.12.0/cucumber-gherkin-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.12.0/cucumber-gherkin-messages-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/omerbozduman/.m2/repository/io/cucumber/datatable/7.12.0/datatable-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-plugin/7.12.0/cucumber-plugin-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/docstring/7.12.0/docstring-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/html-formatter/20.3.0/html-formatter-20.3.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/Users/omerbozduman/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-junit/7.12.0/cucumber-junit-7.12.0.jar:/Users/omerbozduman/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/omerbozduman/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/omerbozduman/.m2/repository/io/appium/java-client/8.3.0/java-client-8.3.0.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-api/4.9.0/selenium-api-4.9.0.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.9.0/selenium-remote-driver-4.9.0.jar:/Users/omerbozduman/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/omerbozduman/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/omerbozduman/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/omerbozduman/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/omerbozduman/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/omerbozduman/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/omerbozduman/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/omerbozduman/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-buffer/4.1.91.Final/netty-buffer-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec-http/4.1.91.Final/netty-codec-http-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec/4.1.91.Final/netty-codec-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-handler/4.1.91.Final/netty-handler-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-common/4.1.91.Final/netty-common-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.91.Final/netty-transport-classes-epoll-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.91.Final/netty-transport-classes-kqueue-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-epoll/4.1.91.Final/netty-transport-native-epoll-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.91.Final/netty-transport-native-kqueue-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.91.Final/netty-transport-native-unix-common-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport/4.1.91.Final/netty-transport-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-resolver/4.1.91.Final/netty-resolver-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api/1.25.0/opentelemetry-api-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-context/1.25.0/opentelemetry-context-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.25.0/opentelemetry-exporter-logging-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.25.0/opentelemetry-sdk-metrics-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.25.0-alpha/opentelemetry-sdk-logs-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.25.0-alpha/opentelemetry-api-logs-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.25.0-alpha/opentelemetry-api-events-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.25.0/opentelemetry-sdk-common-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.25.0/opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.25.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.25.0/opentelemetry-sdk-trace-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.25.0/opentelemetry-sdk-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/omerbozduman/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/omerbozduman/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/omerbozduman/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/omerbozduman/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/omerbozduman/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/omerbozduman/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-http/4.9.0/selenium-http-4.9.0.jar:/Users/omerbozduman/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-json/4.9.0/selenium-json-4.9.0.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.9.0/selenium-manager-4.9.0.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-support/4.9.0/selenium-support-4.9.0.jar:/Users/omerbozduman/.m2/repository/com/google/code/gson/gson/2.10/gson-2.10.jar:/Users/omerbozduman/.m2/repository/cglib/cglib/3.3.0/cglib-3.3.0.jar:/Users/omerbozduman/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/Users/omerbozduman/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/omerbozduman/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/omerbozduman/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/omerbozduman/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/omerbozduman/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/omerbozduman/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/omerbozduman/.m2/repository/org/slf4j/slf4j-api/2.0.5/slf4j-api-2.0.5.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/omerbozduman/IdeaProjects/OxburyTask/target/test-classes:/Users/omerbozduman/IdeaProjects/OxburyTask/target/classes:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-java/7.12.0/cucumber-java-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-core/7.12.0/cucumber-core-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin/7.12.0/cucumber-gherkin-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.12.0/cucumber-gherkin-messages-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/gherkin/26.2.0/gherkin-26.2.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/messages/22.0.0/messages-22.0.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/tag-expressions/5.0.1/tag-expressions-5.0.1.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-expressions/16.1.2/cucumber-expressions-16.1.2.jar:/Users/omerbozduman/.m2/repository/io/cucumber/datatable/7.12.0/datatable-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-plugin/7.12.0/cucumber-plugin-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/docstring/7.12.0/docstring-7.12.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/html-formatter/20.3.0/html-formatter-20.3.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/junit-xml-formatter/0.2.0/junit-xml-formatter-0.2.0.jar:/Users/omerbozduman/.m2/repository/io/cucumber/ci-environment/9.2.0/ci-environment-9.2.0.jar:/Users/omerbozduman/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/omerbozduman/.m2/repository/io/cucumber/cucumber-junit/7.12.0/cucumber-junit-7.12.0.jar:/Users/omerbozduman/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/omerbozduman/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/omerbozduman/.m2/repository/io/appium/java-client/8.3.0/java-client-8.3.0.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-api/4.9.1/selenium-api-4.9.1.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-remote-driver/4.9.1/selenium-remote-driver-4.9.1.jar:/Users/omerbozduman/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/omerbozduman/.m2/repository/com/google/auto/service/auto-service-annotations/1.0.1/auto-service-annotations-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/auto/service/auto-service/1.0.1/auto-service-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/auto/auto-common/1.2/auto-common-1.2.jar:/Users/omerbozduman/.m2/repository/com/google/guava/guava/31.1-jre/guava-31.1-jre.jar:/Users/omerbozduman/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/omerbozduman/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/omerbozduman/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/omerbozduman/.m2/repository/org/checkerframework/checker-qual/3.12.0/checker-qual-3.12.0.jar:/Users/omerbozduman/.m2/repository/com/google/errorprone/error_prone_annotations/2.11.0/error_prone_annotations-2.11.0.jar:/Users/omerbozduman/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-buffer/4.1.91.Final/netty-buffer-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec-http/4.1.91.Final/netty-codec-http-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec/4.1.91.Final/netty-codec-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-handler/4.1.91.Final/netty-handler-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-common/4.1.91.Final/netty-common-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-classes-epoll/4.1.91.Final/netty-transport-classes-epoll-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-classes-kqueue/4.1.91.Final/netty-transport-classes-kqueue-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-epoll/4.1.91.Final/netty-transport-native-epoll-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.91.Final/netty-transport-native-kqueue-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-unix-common/4.1.91.Final/netty-transport-native-unix-common-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport/4.1.91.Final/netty-transport-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-resolver/4.1.91.Final/netty-resolver-4.1.91.Final.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api/1.25.0/opentelemetry-api-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-context/1.25.0/opentelemetry-context-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-exporter-logging/1.25.0/opentelemetry-exporter-logging-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-metrics/1.25.0/opentelemetry-sdk-metrics-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-logs/1.25.0-alpha/opentelemetry-sdk-logs-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api-logs/1.25.0-alpha/opentelemetry-api-logs-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-api-events/1.25.0-alpha/opentelemetry-api-events-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-common/1.25.0/opentelemetry-sdk-common-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure-spi/1.25.0/opentelemetry-sdk-extension-autoconfigure-spi-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-extension-autoconfigure/1.25.0-alpha/opentelemetry-sdk-extension-autoconfigure-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk-trace/1.25.0/opentelemetry-sdk-trace-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-sdk/1.25.0/opentelemetry-sdk-1.25.0.jar:/Users/omerbozduman/.m2/repository/io/opentelemetry/opentelemetry-semconv/1.25.0-alpha/opentelemetry-semconv-1.25.0-alpha.jar:/Users/omerbozduman/.m2/repository/io/ous/jtoml/2.0.0/jtoml-2.0.0.jar:/Users/omerbozduman/.m2/repository/net/bytebuddy/byte-buddy/1.14.4/byte-buddy-1.14.4.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-exec/1.3/commons-exec-1.3.jar:/Users/omerbozduman/.m2/repository/org/asynchttpclient/async-http-client/2.12.3/async-http-client-2.12.3.jar:/Users/omerbozduman/.m2/repository/org/asynchttpclient/async-http-client-netty-utils/2.12.3/async-http-client-netty-utils-2.12.3.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-codec-socks/4.1.60.Final/netty-codec-socks-4.1.60.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-handler-proxy/4.1.60.Final/netty-handler-proxy-4.1.60.Final.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-epoll/4.1.60.Final/netty-transport-native-epoll-4.1.60.Final-linux-x86_64.jar:/Users/omerbozduman/.m2/repository/io/netty/netty-transport-native-kqueue/4.1.60.Final/netty-transport-native-kqueue-4.1.60.Final-osx-x86_64.jar:/Users/omerbozduman/.m2/repository/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar:/Users/omerbozduman/.m2/repository/com/typesafe/netty/netty-reactive-streams/2.0.4/netty-reactive-streams-2.0.4.jar:/Users/omerbozduman/.m2/repository/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-http/4.9.1/selenium-http-4.9.1.jar:/Users/omerbozduman/.m2/repository/dev/failsafe/failsafe/3.3.1/failsafe-3.3.1.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-json/4.9.1/selenium-json-4.9.1.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-manager/4.9.1/selenium-manager-4.9.1.jar:/Users/omerbozduman/.m2/repository/org/seleniumhq/selenium/selenium-support/4.9.1/selenium-support-4.9.1.jar:/Users/omerbozduman/.m2/repository/com/google/code/gson/gson/2.10/gson-2.10.jar:/Users/omerbozduman/.m2/repository/cglib/cglib/3.3.0/cglib-3.3.0.jar:/Users/omerbozduman/.m2/repository/org/ow2/asm/asm/7.1/asm-7.1.jar:/Users/omerbozduman/.m2/repository/commons-validator/commons-validator/1.7/commons-validator-1.7.jar:/Users/omerbozduman/.m2/repository/commons-beanutils/commons-beanutils/1.9.4/commons-beanutils-1.9.4.jar:/Users/omerbozduman/.m2/repository/commons-digester/commons-digester/2.1/commons-digester-2.1.jar:/Users/omerbozduman/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/omerbozduman/.m2/repository/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar:/Users/omerbozduman/.m2/repository/org/apache/commons/commons-lang3/3.12.0/commons-lang3-3.12.0.jar:/Users/omerbozduman/.m2/repository/commons-io/commons-io/2.11.0/commons-io-2.11.0.jar:/Users/omerbozduman/.m2/repository/org/slf4j/slf4j-api/2.0.5/slf4j-api-2.0.5.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="/Users/omerbozduman"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
-    <property name="java.version.date" value="2022-10-18"/>
-    <property name="java.home" value="/Users/omerbozduman/Library/Java/JavaVirtualMachines/openjdk-19.0.1/Contents/Home"/>
-    <property name="file.separator" value="/"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre"/>
     <property name="basedir" value="/Users/omerbozduman/IdeaProjects/OxburyTask"/>
-    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="file.separator" value="/"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/omerbozduman/IdeaProjects/OxburyTask/target/surefire/surefirebooter16250504556131234570.jar"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/omerbozduman/IdeaProjects/OxburyTask/target/surefire/surefirebooter3777965777937589851.jar"/>
+    <property name="sun.boot.class.path" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/classes"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.runtime.version" value="19.0.1+10-21"/>
+    <property name="java.runtime.version" value="1.8.0_302-b08"/>
     <property name="user.name" value="omerbozduman"/>
-    <property name="stdout.encoding" value="UTF-8"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="13.3.1"/>
+    <property name="os.version" value="10.16"/>
+    <property name="java.endorsed.dirs" value="/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/endorsed"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
     <property name="localRepository" value="/Users/omerbozduman/.m2/repository"/>
-    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="cucumber.options" value="--tag @smoke"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
     <property name="java.io.tmpdir" value="/var/folders/n5/f6tqh7kx36q3fxhqz8mt6t240000gn/T/"/>
-    <property name="idea.version" value="2022.3.1"/>
-    <property name="java.version" value="19.0.1"/>
+    <property name="java.version" value="1.8.0_302"/>
     <property name="user.dir" value="/Users/omerbozduman/IdeaProjects/OxburyTask"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.library.path" value="/Users/omerbozduman/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
-    <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="stderr.encoding" value="UTF-8"/>
-    <property name="java.vendor" value="Oracle Corporation"/>
-    <property name="java.vm.version" value="19.0.1+10-21"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vendor" value="Temurin"/>
+    <property name="java.vm.version" value="25.302-b08"/>
+    <property name="java.ext.dirs" value="/Users/omerbozduman/Library/Java/Extensions:/Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home/jre/lib/ext:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java"/>
     <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="52.0"/>
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
-    <property name="java.class.version" value="63.0"/>
   </properties>
-  <testcase name="As a user I should be able to navigate back to homepage after search any topics" classname="Home page after search" time="48.612"/>
-  <testcase name="As a user I should be able search topics from search button and see them after search" classname="Search By Enter Any Topic" time="46.722"/>
-  <testcase name="As a user I should be able search topics from search button and see them after search" classname="Search From More Topics" time="45.464"/>
-  <testcase name="As a user I should be able login my BBC News account without enter my credentials" classname="Login page" time="47.77"/>
-  <testcase name="As a user I should tab video tab and display BBC New Channel title" classname="Video Tab" time="52.451"/>
+  <testcase name="As a user I should be able to navigate back to homepage after search any topics" classname="Home page after search" time="27.735"/>
+  <testcase name="As a user I should be able search topics from search button and see them after search" classname="Search By Enter Any Topic" time="62.691">
+    <error message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id=&apos;bbc.mobile.news.uk:id/content_card_title&apos;] (tried for 20 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_302&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {appium:adbExecTimeout: 20000, appium:app: /Users/omerbozduman/IdeaPro..., appium:appPackage: bbc.mobile.news.uk, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: UiAutomator2, deviceName: Pixel_6_Pro_API_26, platformName: ANDROID, platformVersion: 8.0}, appium:deviceApiLevel: 26, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 8.0.0, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2868, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: 9c3208ec-4397-4d9a-a00b-1763093324c0" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='bbc.mobile.news.uk:id/content_card_title'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_302'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:adbExecTimeout: 20000, appium:app: /Users/omerbozduman/IdeaPro..., appium:appPackage: bbc.mobile.news.uk, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: UiAutomator2, deviceName: Pixel_6_Pro_API_26, platformName: ANDROID, platformVersion: 8.0}, appium:deviceApiLevel: 26, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 8.0.0, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2868, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9c3208ec-4397-4d9a-a00b-1763093324c0
+</error>
+    <system-out><![CDATA[
+@search @smoke
+Scenario: As a user I should be able search topics from search button and see them after search &amp#27;[90m# src/test/resources/features/HomePageFeature/SearchByEnterAnyTopic.feature:5&amp#27;[0m
+platform = Android
+deviceName = Pixel_6_Pro_API_26
+MobileUtils.GetAppFilePathAddress() = /Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/AppFiles/bbc.mobile.news.uk_6.2.41-6024105_minAPI21(arm64-v8a,armeabi,armeabi-v7a,mips,mips64,x86,x86_64)(nodpi)_apkmirror.com.apk
+ Test running on local Android devices..........
+Driver.getDriver() = AndroidDriver:  on ANDROID (9c3208ec-4397-4d9a-a00b-1763093324c0)
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged into my BBC News account&amp#27;[0m                                                  &amp#27;[90m# com.bbc_news.step_definitions.LoginPageStepDefs.i_have_logged_into_my_bbc_news_account()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI click the search button&amp#27;[0m                                                                &amp#27;[90m# com.bbc_news.step_definitions.HomePageStepDefs.iClickTheSearchButton()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m"More Topics"&amp#27;[0m&amp#27;[32m is displayed on the search page&amp#27;[0m                                            &amp#27;[90m# com.bbc_news.step_definitions.HomePageStepDefs.isDisplayedOnTheSearchPage(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI search for &amp#27;[0m&amp#27;[32m&amp#27;[1m"England"&amp#27;[0m                                                                   &amp#27;[90m# com.bbc_news.step_definitions.HomePageStepDefs.iSearchFor(java.lang.String)&amp#27;[0m
+actualTitle = Articles related to "England"
+expectedTitle = Articles related to "England"
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m"Articles related to"&amp#27;[0m&amp#27;[32m &amp#27;[0m&amp#27;[32m&amp#27;[1m"England"&amp#27;[0m&amp#27;[32m is displayed on the page&amp#27;[0m                                  &amp#27;[90m# com.bbc_news.step_definitions.HomePageStepDefs.isDisplayedOnThePage(java.lang.String,java.lang.String)&amp#27;[0m
+topic = England
+topic = NHS England
+topic = Bank of England
+topic = Ross England row
+topic = The Church of England
+topic = Sentencing in England and Wales
+topic = University of the West of England
+topic = Children's Commissioner for England
+topic = Catholic Church in England and Wales
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mall topics on the navigation bar should contain &amp#27;[0m&amp#27;[32m&amp#27;[1m"England"&amp#27;[0m                                &amp#27;[90m# com.bbc_news.step_definitions.HomePageStepDefs.allTopicsOnTheNavigationBarShouldContain(java.lang.String)&amp#27;[0m
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mI check last &amp#27;[0m&amp#27;[31m&amp#27;[1m50&amp#27;[0m&amp#27;[31m content, all should contain &amp#27;[0m&amp#27;[31m&amp#27;[1m"England"&amp#27;[0m                                     &amp#27;[90m# com.bbc_news.step_definitions.HomePageStepDefs.iCheckLastContentAllShouldContain(int,java.lang.String)&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='bbc.mobile.news.uk:id/content_card_title'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_302'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:adbExecTimeout: 20000, appium:app: /Users/omerbozduman/IdeaPro..., appium:appPackage: bbc.mobile.news.uk, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: UiAutomator2, deviceName: Pixel_6_Pro_API_26, platformName: ANDROID, platformVersion: 8.0}, appium:deviceApiLevel: 26, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 8.0.0, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2868, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 9c3208ec-4397-4d9a-a00b-1763093324c0
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.bbc_news.pages.actions.CommonActions.getListOfText(CommonActions.java:45)
+	at com.bbc_news.pages.actions.HomePageActions.getAllContentsAfetrSearchWithAnyTopic(HomePageActions.java:88)
+	at com.bbc_news.step_definitions.HomePageStepDefs.iCheckLastContentAllShouldContain(HomePageStepDefs.java:85)
+	at ✽.I check last 50 content, all should contain "England"(file:///Users/omerbozduman/IdeaProjects/OxburyTask/src/test/resources/features/HomePageFeature/SearchByEnterAnyTopic.feature:12)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in opaque part at index 15: https:saucelabs testobject url
+	at io.appium.java_client.AppiumClientConfig.baseUrl(AppiumClientConfig.java:120)
+	at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:109)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+	at com.bbc_news.driver.MobileDriver.setupDriver(MobileDriver.java:59)
+	at com.bbc_news.step_definitions.Hooks.setUp(Hooks.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 15: https:saucelabs testobject url
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parse(URI.java:3057)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URL.toURI(URL.java:964)
+	at io.appium.java_client.AppiumClientConfig.baseUrl(AppiumClientConfig.java:118)
+	... 55 more
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: 'platformName' can't be blank 
+Host info: host: '00147OB', ip: 'fe80:0:0:0:847:46ec:b249:c3ff%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_302'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, newSession {capabilities=[{appium:adbExecTimeout=20000, appium:app=/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/AppFiles/bbc.mobile.news.uk_6.2.41-6024105_minAPI21(arm64-v8a,armeabi,armeabi-v7a,mips,mips64,x86,x86_64)(nodpi)_apkmirror.com.apk, appium:automationName=XCUITest, appium:deviceName=iPhone 8, appium:platform=iOS, appium:platformVersion=12.0}], desiredCapabilities=Capabilities {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: XCUITest, deviceName: iPhone 8, platform: iOS, platformVersion: 12.0}}]
+Capabilities {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: XCUITest, deviceName: iPhone 8, platform: iOS, platformVersion: 12.0}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+	at com.bbc_news.driver.MobileDriver.setupDriver(MobileDriver.java:73)
+	at com.bbc_news.step_definitions.Hooks.setUp(Hooks.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in opaque part at index 15: https:saucelabs testobject url
+	at io.appium.java_client.AppiumClientConfig.baseUrl(AppiumClientConfig.java:120)
+	at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:109)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+	at com.bbc_news.driver.MobileDriver.setupDriver(MobileDriver.java:88)
+	at com.bbc_news.step_definitions.Hooks.setUp(Hooks.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 15: https:saucelabs testobject url
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parse(URI.java:3057)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URL.toURI(URL.java:964)
+	at io.appium.java_client.AppiumClientConfig.baseUrl(AppiumClientConfig.java:118)
+	... 55 more
+]]></system-err>
+  </testcase>
+  <testcase name="As a user I should be able search topics from search button and see them after search" classname="Search From More Topics" time="48.895">
+    <error message="Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id=&apos;bbc.mobile.news.uk:id/content_card_title&apos;] (tried for 20 second(s) with 500 milliseconds interval)&#10;Build info: version: &apos;4.9.1&apos;, revision: &apos;eb2032df7f&apos;&#10;System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.16&apos;, java.version: &apos;1.8.0_302&apos;&#10;Driver info: io.appium.java_client.android.AndroidDriver&#10;Capabilities {appium:adbExecTimeout: 20000, appium:app: /Users/omerbozduman/IdeaPro..., appium:appPackage: bbc.mobile.news.uk, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: UiAutomator2, deviceName: Pixel_6_Pro_API_26, platformName: ANDROID, platformVersion: 8.0}, appium:deviceApiLevel: 26, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 8.0.0, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2868, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}&#10;Session ID: 21b6cfc5-da79-410f-bb6d-b11d8c54bf80" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: 
+Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='bbc.mobile.news.uk:id/content_card_title'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_302'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:adbExecTimeout: 20000, appium:app: /Users/omerbozduman/IdeaPro..., appium:appPackage: bbc.mobile.news.uk, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: UiAutomator2, deviceName: Pixel_6_Pro_API_26, platformName: ANDROID, platformVersion: 8.0}, appium:deviceApiLevel: 26, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 8.0.0, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2868, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 21b6cfc5-da79-410f-bb6d-b11d8c54bf80
+</error>
+    <system-out><![CDATA[
+@search @smoke
+Scenario: As a user I should be able search topics from search button and see them after search &amp#27;[90m# src/test/resources/features/HomePageFeature/SearchFromMoreTopics.feature:5&amp#27;[0m
+platform = Android
+deviceName = Pixel_6_Pro_API_26
+MobileUtils.GetAppFilePathAddress() = /Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/AppFiles/bbc.mobile.news.uk_6.2.41-6024105_minAPI21(arm64-v8a,armeabi,armeabi-v7a,mips,mips64,x86,x86_64)(nodpi)_apkmirror.com.apk
+ Test running on local Android devices..........
+Driver.getDriver() = AndroidDriver:  on ANDROID (21b6cfc5-da79-410f-bb6d-b11d8c54bf80)
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mI have logged into my BBC News account&amp#27;[0m                                                  &amp#27;[90m# com.bbc_news.step_definitions.LoginPageStepDefs.i_have_logged_into_my_bbc_news_account()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI click the search button&amp#27;[0m                                                                &amp#27;[90m# com.bbc_news.step_definitions.HomePageStepDefs.iClickTheSearchButton()&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32m&amp#27;[0m&amp#27;[32m&amp#27;[1m"More Topics"&amp#27;[0m&amp#27;[32m is displayed on the search page&amp#27;[0m                                            &amp#27;[90m# com.bbc_news.step_definitions.HomePageStepDefs.isDisplayedOnTheSearchPage(java.lang.String)&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mI select &amp#27;[0m&amp#27;[32m&amp#27;[1m"England"&amp#27;[0m&amp#27;[32m from more topics&amp#27;[0m                                                      &amp#27;[90m# com.bbc_news.step_definitions.HomePageStepDefs.iSelectFromMoreTopics(java.lang.String)&amp#27;[0m
+  &amp#27;[31mAnd &amp#27;[0m&amp#27;[31mI should see all related topics on the navigation bar&amp#27;[0m                                     &amp#27;[90m# com.bbc_news.step_definitions.HomePageStepDefs.iShouldSeeAllRelatedTopicsOnTheNavigationBar()&amp#27;[0m
+      &amp#27;[31morg.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //*[@resource-id='bbc.mobile.news.uk:id/content_card_title'] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_302'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:adbExecTimeout: 20000, appium:app: /Users/omerbozduman/IdeaPro..., appium:appPackage: bbc.mobile.news.uk, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: UiAutomator2, deviceName: Pixel_6_Pro_API_26, platformName: ANDROID, platformVersion: 8.0}, appium:deviceApiLevel: 26, appium:deviceManufacturer: Google, appium:deviceModel: Android SDK built for x86, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 560, appium:deviceScreenSize: 1440x3120, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:pixelRatio: 3.5, appium:platformVersion: 8.0.0, appium:statBarHeight: 84, appium:takesScreenshot: true, appium:viewportRect: {height: 2868, left: 0, top: 84, width: 1440}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: 21b6cfc5-da79-410f-bb6d-b11d8c54bf80
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.bbc_news.pages.actions.CommonActions.getListOfText(CommonActions.java:45)
+	at com.bbc_news.pages.actions.HomePageActions.getAllContentsOfSearchFromMoreTopics(HomePageActions.java:78)
+	at com.bbc_news.step_definitions.HomePageStepDefs.iShouldSeeAllRelatedTopicsOnTheNavigationBar(HomePageStepDefs.java:75)
+	at ✽.I should see all related topics on the navigation bar(file:///Users/omerbozduman/IdeaProjects/OxburyTask/src/test/resources/features/HomePageFeature/SearchFromMoreTopics.feature:10)
+&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in opaque part at index 15: https:saucelabs testobject url
+	at io.appium.java_client.AppiumClientConfig.baseUrl(AppiumClientConfig.java:120)
+	at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:109)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+	at com.bbc_news.driver.MobileDriver.setupDriver(MobileDriver.java:59)
+	at com.bbc_news.step_definitions.Hooks.setUp(Hooks.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 15: https:saucelabs testobject url
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parse(URI.java:3057)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URL.toURI(URL.java:964)
+	at io.appium.java_client.AppiumClientConfig.baseUrl(AppiumClientConfig.java:118)
+	... 55 more
+org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 400. Message: 'platformName' can't be blank 
+Host info: host: '00147OB', ip: 'fe80:0:0:0:847:46ec:b249:c3ff%en0'
+Build info: version: '4.9.1', revision: 'eb2032df7f'
+System info: os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_302'
+Driver info: io.appium.java_client.AppiumDriver
+Command: [null, newSession {capabilities=[{appium:adbExecTimeout=20000, appium:app=/Users/omerbozduman/IdeaProjects/OxburyTask/src/test/java/com/bbc_news/AppFiles/bbc.mobile.news.uk_6.2.41-6024105_minAPI21(arm64-v8a,armeabi,armeabi-v7a,mips,mips64,x86,x86_64)(nodpi)_apkmirror.com.apk, appium:automationName=XCUITest, appium:deviceName=iPhone 8, appium:platform=iOS, appium:platformVersion=12.0}], desiredCapabilities=Capabilities {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: XCUITest, deviceName: iPhone 8, platform: iOS, platformVersion: 12.0}}]
+Capabilities {adbExecTimeout: 20000, app: /Users/omerbozduman/IdeaPro..., automationName: XCUITest, deviceName: iPhone 8, platform: iOS, platformVersion: 12.0}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:136)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:194)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:262)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:229)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:157)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:80)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+	at com.bbc_news.driver.MobileDriver.setupDriver(MobileDriver.java:73)
+	at com.bbc_news.step_definitions.Hooks.setUp(Hooks.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+java.lang.RuntimeException: java.net.URISyntaxException: Illegal character in opaque part at index 15: https:saucelabs testobject url
+	at io.appium.java_client.AppiumClientConfig.baseUrl(AppiumClientConfig.java:120)
+	at io.appium.java_client.remote.AppiumCommandExecutor.<init>(AppiumCommandExecutor.java:109)
+	at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:92)
+	at com.bbc_news.driver.MobileDriver.setupDriver(MobileDriver.java:88)
+	at com.bbc_news.step_definitions.Hooks.setUp(Hooks.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
+	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
+	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:78)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:365)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:273)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:238)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:159)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: java.net.URISyntaxException: Illegal character in opaque part at index 15: https:saucelabs testobject url
+	at java.net.URI$Parser.fail(URI.java:2847)
+	at java.net.URI$Parser.checkChars(URI.java:3020)
+	at java.net.URI$Parser.parse(URI.java:3057)
+	at java.net.URI.<init>(URI.java:588)
+	at java.net.URL.toURI(URL.java:964)
+	at io.appium.java_client.AppiumClientConfig.baseUrl(AppiumClientConfig.java:118)
+	... 55 more
+]]></system-err>
+  </testcase>
+  <testcase name="As a user I should be able login my BBC News account without enter my credentials" classname="Login page" time="13.224"/>
+  <testcase name="As a user I should tab video tab and display BBC New Channel title" classname="Video Tab" time="22.682"/>
 </testsuite>

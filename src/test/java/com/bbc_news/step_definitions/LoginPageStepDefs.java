@@ -21,7 +21,7 @@ public class LoginPageStepDefs {
 
     @When("{string} title is displayed")
     public void title_is_displayed(String expectedTitle) {
-        var actualTitle = loginPageActions.getSignIntoYourAccountTitle();
+        String actualTitle = loginPageActions.getSignIntoYourAccountTitle();
         System.out.println("actualTitle = " + actualTitle.length());
         System.out.println("expectedTitle = " + expectedTitle.length());
         Assert.assertEquals(expectedTitle , actualTitle);
@@ -40,6 +40,7 @@ public class LoginPageStepDefs {
     @Given("I have logged into my BBC News account")
     public void i_have_logged_into_my_bbc_news_account() {
         loginPageActions.loginToBbcAccount();
+       // loginPageActions.signInToBbcAccountWithYourCredentials();
     }
 
 

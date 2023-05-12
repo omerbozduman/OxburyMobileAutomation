@@ -4,9 +4,13 @@ import com.bbc_news.utilities.ConfigurationReader;
 import com.bbc_news.utilities.MobileUtils;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
+import io.cucumber.java.Scenario;
+import jdk.jfr.Timespan;
+import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import java.net.URL;
+import java.sql.Time;
 
 import static io.appium.java_client.remote.MobileCapabilityType.*;
 import static org.openqa.selenium.remote.CapabilityType.PLATFORM_NAME;
@@ -16,7 +20,7 @@ public class MobileDriver {
     private static AppiumDriver driver;
 
 
-    public static void setupDriver(){
+    public static void setupDriver(Scenario scenario){
 
         DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
 
@@ -51,12 +55,18 @@ public class MobileDriver {
             case "android_sauce_labs" -> {
                 desiredCapabilities = new DesiredCapabilities();
                 desiredCapabilities.setCapability(PLATFORM_NAME, "Android");
-                desiredCapabilities.setCapability(DEVICE_NAME, "Samsung Galaxy S6");
+                desiredCapabilities.setCapability(DEVICE_NAME, "Samsung_Galaxy_S9_free");
                 desiredCapabilities.setCapability(AUTOMATION_NAME, "UiAutomator2");
-                desiredCapabilities.setCapability("adbExecTimeout", "20000");
-                desiredCapabilities.setCapability("testobject_api_key", " unknow.....");
+                desiredCapabilities.setCapability("appium:app" ,"storage:aed2c210-c400-4b72-98e5-a3c2a6e876c0");
+                //desiredCapabilities.setCapability("adbExecTimeout", "20000");
+                MutableCapabilities sauceOptions = new MutableCapabilities();
+                sauceOptions.setCapability("appiumVersion", "1.22.0");
+               // sauceOptions.setCapability("phoneOnly", true);
+                sauceOptions.setCapability("name", scenario.getName());
+                desiredCapabilities.setCapability("sauce:options", sauceOptions);
                 try {
-                    driver = new AppiumDriver(new URL("https:saucelabs testobject url"), desiredCapabilities);
+                    driver = new AndroidDriver(new URL("https://oauth-bozdumanomer-63bef:0ca50448-27de-4f4b-a786-77296f04f258@ondemand.eu-central-1.saucelabs.com:443/wd/hub"),
+                            desiredCapabilities);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
